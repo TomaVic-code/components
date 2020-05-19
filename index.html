@@ -3,19 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Document</title>
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <nav class="navigation">
-    <div class="logo"></div>
-    <button class="navigation__notification"></button>
-    <div class="navigation__decoration"></div>
-    <button class="navigation__deshboard navigation-btn"></button>
-    <button class="navigation__contacts navigation-btn"></button>
-    <button class="navigation__reports navigation-btn"></button>
-    <button class="navigation__admin navigation-btn"></button>
+  <nav class="nav">
+    <ul class="nav__items">
+      <li class="nav__logo"></li>
+
+      <li class="nav__notifications ">
+         <div class="nav__icon nav__icon_notifications"></div>
+      </li>
+
+      <li class="nav__item_decoration"></li>
+
+      <li class="nav__item">
+        <a href="" class="">
+          <div class="nav__icon nav__icon_dashboard"></div>
+        </a>
+      </li>
+      <li class="nav__item ">
+        <a href="" class="">
+        <div class="nav__icon nav__icon_contacts"></div>
+        </a>
+      </li>
+      <li class="nav__item ">
+        <a href="" class="">
+        <div class="nav__icon nav__icon_reports"></div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="" class="">
+        <div class="nav__icon nav__icon_admin"></div>
+        </a>
+      </li>
+
+
+    </ul>
+
+
+
+    <!-- <div class="logo"></div>
+    <button class="nav__notification"></button>
+    <div class="nav__decoration"></div>
+    <button class="nav__btn nav__icon nav__icon_dashboard"></button>
+    <button class="nav__btn nav__icon nav__icon_contacts "></button>
+    <button class="nav__reports "></button>
+    <button class="nav__admin "></button> -->
   </nav>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
