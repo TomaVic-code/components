@@ -90,6 +90,12 @@ html {
 .navigation-btn:hover {
   background-color: #101926;
 }
+
+.navigation-btn:focus {
+  outline: none;
+}
+
+
 .navigation__notification:hover {
   background-color: #146EB4;
 }
