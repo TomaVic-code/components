@@ -75,6 +75,10 @@ html {
   border: 2px solid #162335;
 }
 
+.nav__icon_notifications:focus {
+  outline: none;
+}
+
 .nav__icon_dashboard {
   background-image: url('../Icons/dashboard.svg');
   background-repeat: no-repeat;
@@ -101,8 +105,45 @@ html {
 
 .nav__icon:hover {
   background-color: #101926;
+  border: none;
 }
 
-.nav__icon_notifications:hover {
-  background-color: #146EB4;
+.nav__item_link {
+  position: relative;
+}
+
+.nav__item_title {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateX(-50%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #232F3E;
+  color: #fff;
+  border-radius: 6px;
+  width: 103px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 0 100px
+}
+
+.nav__item_title::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #232F3E;
+  left: -5%;
+  transform: rotate(45deg);
+}
+
+.nav__item_link:hover .nav__item_title {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
 }
