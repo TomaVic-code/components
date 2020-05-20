@@ -18,25 +18,13 @@ html {
   background-color: #233040;
 }
 
-.nav__items {
+.nav__column {
   display: flex;
   flex-direction: column;
   list-style: none;
+  align-items: center;
   margin: 0;
   padding: 0;
-  align-items: center;
-}
-
-.nav__item {
-  width: 50px;
-  height: 50px;
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 16px 0;
-  background-color: #162335;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .nav__logo {
@@ -45,36 +33,23 @@ html {
   height: 72px;
 }
 
+.nav__column_item {
+  margin: 24px 0 0
+}
 
-.nav__icon_notifications {
+.nav__widgets {
+  padding: 0;
+}
+
+.nav__widget_notifications {
   background-image: url('../Icons/notifications.svg');
   background-repeat: no-repeat;
   background-position: center;
-  width: 24px;
-  height: 24px;
-}
-
-.nav__item_notifications {
   border: 2px solid #162335;
+  border-radius: 8px;
   width: 50px;
   height: 50px;
-  background-color: transparent;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.nav__icon_dashboard {
-  background-image: url('../Icons/dashboard.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-
-  width: 24px;
-  height: 24px;
-  z-index: 1;
-}
-
 
 .nav__item_decoration {
   background-color: #162335;
@@ -82,15 +57,42 @@ html {
   height: 2px;
 }
 
+.nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.nav__item:first-child {
+  margin: 0;
+}
+
+.nav__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #162335;
+}
+
+
+.nav__icon_dashboard {
+  background-image: url('../Icons/dashboard.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .nav__icon_contacts {
   background-image: url('../Icons/contacts.svg');
   background-repeat: no-repeat;
   background-position: center;
-
-  width: 24px;
-  height: 24px;
-
 }
 
 
@@ -98,30 +100,18 @@ html {
   background-image: url('../Icons/reports.svg');
   background-repeat: no-repeat;
   background-position: center;
-
-  width: 24px;
-  height: 24px;
-
 }
 
 .nav__icon_admin {
   background-image: url('../Icons/admin.svg');
   background-repeat: no-repeat;
   background-position: center;
-  width: 24px;
-  height: 24px;
-
 }
 
-.nav__btn:hover {
+.nav__icon:hover {
   background-color: #101926;
 }
 
-.nav__btn:focus {
-  outline: none;
-}
-
-
-.nav__notification:hover {
+.nav__widget_notifications:hover {
   background-color: #146EB4;
 }
