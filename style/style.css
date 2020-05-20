@@ -67,15 +67,21 @@ html {
   background-color: #162335;
 }
 
-.nav__icon_notifications {
+.nav__item_button {
   background-image: url('../Icons/notifications.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   border: 2px solid #162335;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
 }
 
-.nav__icon_notifications:focus {
+
+
+.nav__item_button:focus {
+  background-color: #1B81D0;
   outline: none;
 }
 
@@ -105,11 +111,15 @@ html {
 
 .nav__icon:hover {
   background-color: #101926;
-  border: none;
 }
 
-.nav__item_link {
-  position: relative;
+.nav__item_button:hover {
+  background-color: #1B81D0;
+}
+
+.nav__icon_active {
+  background-color:  #1B81D0;
+  pointer-events: none;
 }
 
 .nav__item_title {
@@ -126,7 +136,7 @@ html {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   color: #fff;
   border-radius: 6px;
-  width: 103px;
+  min-width: 103px;
   height: 40px;
   font-weight: bold;
   font-size: 14px;
