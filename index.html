@@ -5,16 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="style/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/side_notification.css">
 </head>
 <body>
 
+  <nav class="nav">
+    <section class="nav__main">
+      <div class="nav__main__logo"></div>
+      <button id="widget__notifications" onclick="toggleNotifications()" class="nav__main__widget nav__main__widget_notifications">
+        <i class="material-icons icon-set">notification_important</i>
+      </button>
+      <!-- <button id="widget__other" onclick="toggleOther()" class="nav__widget nav__widget_notifications">
+        <i class="icon_size_s icon-notification"></i>
+      </button> -->
+      <div class="nav__main__decoration_line"></div>
+      <a href="#" class="nav__main__btn nav__main__btn_link">
+        <i class="material-icons icon-set">home</i>
+        <h2 class="nav__main__btn_name">Dashboard</h2>
+      </a>
+      <a href="#" class="nav__main__btn nav__main__btn_link">
+        <i class="material-icons icon-set">menu_book</i>
+        <h2 class="nav__main__btn_name">Contacts</h2>
+      </a>
+      <a href="#" class="nav__main__btn nav__main__btn_link">
+        <i class="material-icons icon-set">assessment</i>
+        <h2 class="nav__main__btn_name">Reports</h2>
+      </a>
+      <a href="#" class="nav__main__btn nav__main__btn_link">
+        <i class="material-icons icon-set">settings</i>
+        <h2 class="nav__main__btn_name">Admin</h2>
+      </a>
+    </section>
+    <section class="nav__side__notification">
+      <div class="nav__side__notificatin_header">
+        <i class="material-icons">notifications</i>
+        <h3 class="nav__side__notificatin_header-title">Notifications</h3>
+        <div class="nav__side__notification_header-close">
+          <i class="material-icons click-close">close</i>
+        </div>
+      </div>
+      <div class="nav__side__notificatin_content">
+       
+      </div>    
+    </section>
+  </nav>
 
+<<<<<<< HEAD
   <!-- <div class="nav">
     
     <div class="nav__logo"></div>
@@ -70,5 +114,11 @@
   </div>
 
   <script src="./js/script.js"></script>
+=======
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+    <script src="./js/script.js"></script>
+>>>>>>> bd19da9554be21c67b79bf8207ca6f7e840bbcf0
 </body>
 </html>

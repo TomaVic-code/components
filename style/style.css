@@ -2,7 +2,7 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-.nav {
+.nav__main {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -14,74 +14,75 @@ html {
   background-color: #233040;
 }
 
-.nav__logo {
+.nav__main__logo {
   background-color: #384D67;
   width: 72px;
   height: 72px;
 }
 
-.nav__widget {
+.nav__main__widget {
   background-color: transparent;
   border: 2px solid #162335;
   box-sizing: border-box;
   padding: 12px;
   border-radius: 8px;
-  margin: 16px 0 0;;
+  margin: 16px 0 0;
 }
 
-.nav__widget:first-of-type {
+.nav__main__widget:first-of-type {
   margin-top: 24px;
 }
 
-.nav__widget:hover {
+.nav__main__widget:hover {
   box-sizing: border-box;
   border: 2px solid #1A1E24;
   cursor: pointer;
 }
 
-.nav__widget:focus {
+.nav__main__widget:focus {
   outline-style: none;
 }
 
 /* Toggles from JS */
 
-.nav__widget_active {
+.nav__main__widget_active {
   background-color: #146EB4;
   border: 2px solid #1A1E24;
 }
 
-.nav__decoration_line {
+.nav__main__decoration_line {
   background-color: #162335;
   width: 24px;
   height: 2px;
   margin: 24px 0 0;
 }
 
-.nav__btn {
+.nav__main__btn {
   padding: 14px;
   margin: 16px 0 0px;
   border-radius: 8px;
 }
 
-.nav__btn:first-of-type {
+.nav__main__btn:first-of-type {
   margin: 24px 0 0 ;
 }
 
-.nav__btn:hover {
+.nav__main__btn:hover {
   background-color: #101926;
 }
 
-.nav__btn:active {
+.nav__main__btn:active {
   background-color: #09101A;
 } 
 
-.nav__btn_link {
+.nav__main__btn_link {
   background-color: #162335;
+  text-decoration: none;
 }
 
 /* Tooltip - Button Name  */
 
-.nav__btn_name {
+.nav__main__btn_name {
   visibility: hidden;
   opacity: 0;
   display: flex;
@@ -101,9 +102,10 @@ html {
   margin: 0 0 0 80px;
   pointer-events: none;
   letter-spacing: .8px;
+  z-index: 100;
 }
 
-.nav__btn_name::before {
+.nav__main__btn_name::before {
   content: '';
   position: absolute;
   min-width: 16px;
@@ -115,61 +117,29 @@ html {
   z-index: -1;
 }
 
-.nav__btn:hover .nav__btn_name {
+.nav__main__btn:hover .nav__main__btn_name {
   visibility: visible;
   opacity: 1;
   transform: translate(-18px, -34px);
 }
 
-.nav__btn:active .nav__btn_name::before {
+.nav__main__btn:active .nav__main__btn_name::before {
   background-color: #1B81D0;
 }
 
-.nav__btn:active .nav__btn_name {
+.nav__main__btn:active .nav__main__btn_name {
   background-color: #1B81D0;
 }
 
 /* Icons */
 
-.icon_size_s {
-  width: 24px;
-  height: 24px;
+.icon-set {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.icon-other {
-  display: block;
-  margin: 0 auto;
-  background-image: url('../Icons/Vector-other.png');
-  background-repeat: no-repeat;
-}
-
-.icon-notification {
-  display: block;
-  margin: 0 auto;
-  background-image: url('../Icons/notifications.svg');
-  background-repeat: no-repeat;
-}
-
-.icon-dashboard {
-  display: block;
-  margin: 0 auto;
-  background-image: url('../Icons/dashboard.svg');
-  background-repeat: no-repeat;
-}
-
-.icon-contacts {
-  display: block;
-  margin: 0 auto;
-  background-image: url('../Icons/contacts.svg');
-  background-repeat: no-repeat;
-}
-
-.icon-reports {
-  display: block;
-  margin: 0 auto;
-  background-image: url('../Icons/reports.svg');
-  background-repeat: no-repeat;
-}
+<<<<<<< HEAD
 
 .icon-admin {
   display: block;
@@ -326,3 +296,5 @@ margin: 0 auto;
   margin: 0;
   padding: 0;
 } */
+=======
+>>>>>>> bd19da9554be21c67b79bf8207ca6f7e840bbcf0

@@ -1,0 +1,48 @@
+.nav {
+  position: relative;
+}
+
+.nav__side__notification {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 72px;
+  background-color: #313F50;
+  transform: translateX(-100%);
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+  width: 416px;
+  height: 100vh;
+  z-index: -1;
+}
+
+.nav__side__notification-active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nav__side__notificatin_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  background-color: #313F50;
+  color: #fff;
+  pointer-events: none;
+  margin: 0 30px;
+}
+
+.nav__side__notificatin_header-title {
+  /* margin-left: -180px; */
+}
+
+.click-close {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.nav__side__notificatin_content {
+  max-height: 100vh;
+  overflow: auto;
+}
