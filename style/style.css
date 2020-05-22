@@ -177,3 +177,152 @@ html {
   background-image: url('../Icons/admin.svg');
   background-repeat: no-repeat;
 }
+/* 
+* {
+  border: solid 1px red;
+} */
+.notifications {
+  width: 100%;
+margin: 0 auto;
+  background-color: grey;
+}
+
+
+.notification__element {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  margin:0;
+  background: #313F50;  
+}
+
+.notification__company-logo {
+  background-image: url(../images/Notifications/Unicredit.png);
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-size: contain;
+  margin: 16px 12px 0 16px;
+}
+
+.notification__body {
+  margin: 0;
+  /* padding: 0px 16px 16px; */
+  width: 100%;
+}
+
+.notification__head {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: left; */
+  /* padding: 16px 16px 0 12px; */
+  margin: 16px 0 0 0;
+}
+
+.notification__sender {
+  margin-top: 16px;
+  width: 80%;
+}
+
+.notification__date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #C6CCD4;
+  width: 20%;
+  text-align: right;
+  margin: 0 16px 0 0;
+}
+
+.notification__message {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0;
+}
+
+.notification__sender {
+  margin: 0;
+}
+
+
+.notification__company-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin: 0;
+}
+
+.notification__currency-amount {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ADBBCC;
+  margin: 0;
+}
+
+.notification__instrument-type {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.notification__guarantee-id {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.notification_is-issued {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.notification__reference {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin: 0 0 16px 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #B7BFCA;
+  width: 100%;
+}
+/* 
+.notification__issuance-ref {
+  margin: 0;
+  padding: 0;
+}
+
+.notification__issuance-date {
+  margin: 0;
+  padding: 0;
+}
+
+.notifiations__legal-jurisdiction{
+  margin: 0;
+  padding: 0;
+} */

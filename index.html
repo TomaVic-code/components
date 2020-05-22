@@ -7,21 +7,24 @@
   <title>Document</title>
   <link rel="stylesheet" href="style/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
 
-  <div class="nav">
+  <!-- <div class="nav">
     
     <div class="nav__logo"></div>
     <button id="widget__notifications" onclick="toggleNotifications()" class="nav__widget nav__widget_notifications">
       <i class="icon_size_s icon-notification"></i>
-    </button>
+    </button> -->
     <!-- <button id="widget__other" onclick="toggleOther()" class="nav__widget nav__widget_notifications">
       <i class="icon_size_s icon-notification"></i>
     </button> -->
-    <div class="nav__decoration_line"></div>
+    <!-- <div class="nav__decoration_line"></div>
     <a href="#" class="nav__btn nav__btn_link">
       <i class="icon_size_s icon-dashboard"></i>
       <h2 class="nav__btn_name">Dashboard</h2>
@@ -32,15 +35,40 @@
     </a>
     <a href="#" class="nav__btn nav__btn_link">
       <i class="icon_size_s icon-reports"></i>
-      <h2 class="nav__btn_name">Reports</h2>
+      <h2 class="nav__btn_name">Reports</h2>  
     </a>
     <a href="#" class="nav__btn nav__btn_link">
       <i class="icon_size_s icon-admin"></i>
       <h2 class="nav__btn_name">Admin</h2>
     </a>
+  </div> -->
+
+
+  <div class="notifications">
+    <div class="notification__element">
+      <div class="notification__company-logo"></div>
+      <div class="notification__body">
+        <div class="notification__head">
+          <div class="notification__sender">
+            <h2 class="notification__company-name">Unicredit Bank</h2>
+            <p class="notification__currency-amount">EUR 999,999,999.00</p>
+          </div>
+          <p class="notification__date">17 May</p>
+        </div>
+        <p class="notification__message">
+          <span class="notification__instrument-type"> Bank Guarantee &nbsp;</span> 
+          <span class="notification__guarantee-id">  #AP0012233333311  &nbsp; </span>
+          <span class="notification_is-issued"> has been Issued.</span>
+        </p>
+        <p class="notification__reference">
+          <span class="notification__issuance-ref">[Guarantee Issuance Ref]&nbsp;</span>
+          <span class="notification__issuance-date"> [Issuance date]&nbsp;</span>
+          <span class="notifiations__legal-jurisdiction">[Legal Jurisdiction]</span>
+          </p>
+        </div>
+    </div>
   </div>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+
   <script src="./js/script.js"></script>
 </body>
 </html>
