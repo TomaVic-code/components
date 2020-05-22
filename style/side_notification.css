@@ -33,10 +33,6 @@
   margin: 0 30px;
 }
 
-.nav__side__notificatin_header-title {
-  /* margin-left: -180px; */
-}
-
 .click-close {
   pointer-events: all;
   cursor: pointer;
