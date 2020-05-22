@@ -6,47 +6,41 @@
 
   <title>Document</title>
   <link rel="stylesheet" href="style/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <nav class="nav">
-    <ul class="nav__column">
-      <li class="nav__logo"></li>
-      <li class="nav__section">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <button class="nav__item_button"></button>
-          </li>
-        </ul>
-      </li>
-      <li class="nav__section">
-        <div class="nav__item_decoration"></div>
-      </li>
-      <li class="nav__section">
-        <ul class="nav__items">
-          <li class="nav__item nav__item_link">
-            <a href="#" class="nav__icon nav__icon_dashboard nav__icon_active"></a>
-            <h2 class="nav__item_title">Dashboard</h2>
-          </li>
-          <li class="nav__item nav__item_link">
-            <a href="#" class="nav__icon nav__icon_contacts"></a>
-            <h2 class="nav__item_title">Contacts</h2>
-          </li>
-          <li class="nav__item nav__item_link">
-            <a href="#" class="nav__icon nav__icon_reports"></a>
-            <h2 class="nav__item_title">Reports</h2>
-          </li>
-          <li class="nav__item nav__item_link">
-            <a href="#" class="nav__icon nav__icon_admin"></a>
-            <h2 class="nav__item_title">Admin</h2>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  <script src="../js/script.js"></script>
+
+
+  <div class="nav">
+    
+    <div class="nav__logo"></div>
+    <button id="widget__notifications" onclick="toggleNotifications()" class="nav__widget nav__widget_notifications">
+      <i class="icon_size_s icon-notification"></i>
+    </button>
+    <!-- <button id="widget__other" onclick="toggleOther()" class="nav__widget nav__widget_notifications">
+      <i class="icon_size_s icon-notification"></i>
+    </button> -->
+    <div class="nav__decoration_line"></div>
+    <a href="#" class="nav__btn nav__btn_link">
+      <i class="icon_size_s icon-dashboard"></i>
+      <h2 class="nav__btn_name">Dashboard</h2>
+    </a>
+    <a href="#" class="nav__btn nav__btn_link">
+      <i class="icon_size_s icon-contacts"></i>
+      <h2 class="nav__btn_name">Contacts</h2>
+    </a>
+    <a href="#" class="nav__btn nav__btn_link">
+      <i class="icon_size_s icon-reports"></i>
+      <h2 class="nav__btn_name">Reports</h2>
+    </a>
+    <a href="#" class="nav__btn nav__btn_link">
+      <i class="icon_size_s icon-admin"></i>
+      <h2 class="nav__btn_name">Admin</h2>
+    </a>
+  </div>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
+  <script src="./js/script.js"></script>
 </body>
 </html>
